@@ -19,7 +19,7 @@ public class Soal : MonoBehaviour
 
         OlahSoal();
 
-        print(soalBag[1,3]); 
+        print(soalBag[1,2]); 
 
     }
 
