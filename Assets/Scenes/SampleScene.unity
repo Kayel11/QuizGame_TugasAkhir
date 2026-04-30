@@ -665,6 +665,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetSoal: {fileID: 4900000, guid: f478f272180848042abb378849167c51, type: 3}
+  txtSoal: {fileID: 1534120232}
+  txtOpsiA: {fileID: 81778241}
+  txtOpsiB: {fileID: 174847200}
+  txtOpsiC: {fileID: 1542518142}
+  txtOpsiD: {fileID: 810033016}
 --- !u!4 &422955674
 Transform:
   m_ObjectHideFlags: 0
@@ -763,7 +768,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 490029571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 422955673}
+        m_TargetAssemblyTypeName: Soal, Assembly-CSharp
+        m_MethodName: Opsi
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: B
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &490029571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1340,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1133164426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 422955673}
+        m_TargetAssemblyTypeName: Soal, Assembly-CSharp
+        m_MethodName: Opsi
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: C
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1133164426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1649,7 +1678,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1416553901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 422955673}
+        m_TargetAssemblyTypeName: Soal, Assembly-CSharp
+        m_MethodName: Opsi
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: D
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1416553901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,13 +1814,13 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 44.75
-  m_fontSizeBase: 36
+  m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2250,7 +2291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1826794491}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 422955673}
+        m_TargetAssemblyTypeName: Soal, Assembly-CSharp
+        m_MethodName: Opsi
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1826794491
 MonoBehaviour:
   m_ObjectHideFlags: 0
