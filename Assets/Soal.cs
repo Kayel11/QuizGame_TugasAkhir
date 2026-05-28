@@ -20,10 +20,15 @@ public class Soal : MonoBehaviour
     // Komponen UI
     public TextMeshProUGUI txtSoal, txtOpsiA, txtOpsiB, txtOpsiC, txtOpsiD;
 
+    bool isHasil;
+    private float durasi;
+    public float durasiPenilaian;
 
     // Start is called before the first frame update
     void Start()
     {
+        durasi = durasiPenilaian;
+
         soal = assetSoal.ToString().Split('#');
 
         soalBag = new string[soal.Length, 10];
@@ -69,30 +74,58 @@ public class Soal : MonoBehaviour
         }
     }
 
+    public GameObject panel;
     public void Opsi(string opsiHuruf)
     {
         CheckJawaban(opsiHuruf[0]);
-        indexSoal++;
-        ambilSoal = true;
-        TampilkanSoal();
-    }
 
-    private void CheckJawaban(char huruf)
-    {
-        if (huruf.Equals(kunciJ))
+        if (isHasil)
         {
-            print("Benar!");
+            //nothing
         }
         else
         {
-            print("Salah");
+            panel.SetActive(true);
         }
+
+        indexSoal++;
+        ambilSoal = true;
+        
+    }
+
+    public TextMeshProUGUI txtPenilaian;
+    private void CheckJawaban(char huruf)
+    {
+        string penilaian;
+
+        if (huruf.Equals(kunciJ))
+        {
+            penilaian = "Benar!";
+        }
+        else
+        {
+            penilaian = "Salah!";
+        }
+
+        txtPenilaian.text = penilaian;
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (panel.activeSelf)
+        {
+            durasiPenilaian -= Time.deltaTime;
+
+            if(durasiPenilaian <= 0)
+            {
+                panel.SetActive(false);
+                durasiPenilaian = durasi;
+
+                TampilkanSoal();
+            }
+        }
     }
 }
