@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Runtime.InteropServices;
 
 public class Soal : MonoBehaviour
 {   
@@ -16,6 +17,8 @@ public class Soal : MonoBehaviour
     bool ambilSoal;
     char kunciJ;
 
+    bool[] soalSelesai;
+
 
     // Komponen UI
     public TextMeshProUGUI txtSoal, txtOpsiA, txtOpsiB, txtOpsiC, txtOpsiD;
@@ -24,12 +27,21 @@ public class Soal : MonoBehaviour
     private float durasi;
     public float durasiPenilaian;
 
+    int jwbBenar, jwbSalah;
+    float nilai;
+
+    public GameObject panel;
+    public GameObject imgPenilaian, imgHasil;
+    public TextMeshProUGUI txtHasil;
+
     // Start is called before the first frame update
     void Start()
     {
         durasi = durasiPenilaian;
 
         soal = assetSoal.ToString().Split('#');
+
+        soalSelesai = new bool[soal.Length];
 
         soalBag = new string[soal.Length, 10];
         maxSoal = soal.Length;
@@ -62,35 +74,57 @@ public class Soal : MonoBehaviour
         {
             if (ambilSoal)
             {
-                txtSoal.text = soalBag[indexSoal, 0];
-                txtOpsiA.text = soalBag[indexSoal, 1];
-                txtOpsiB.text = soalBag[indexSoal, 2];
-                txtOpsiC.text = soalBag[indexSoal, 3];
-                txtOpsiD.text = soalBag[indexSoal, 4];
-                kunciJ = soalBag[indexSoal, 5][0];
+                for(int i=0; i < soal.Length; i++)
+                {
+                    int randomIndexSoal = Random.Range(0, soal.Length);
+                    print("random: " + randomIndexSoal);
+                    if (!soalSelesai[randomIndexSoal])
+                    {
+                        txtSoal.text = soalBag[randomIndexSoal, 0];
+                        txtOpsiA.text = soalBag[randomIndexSoal, 1];
+                        txtOpsiB.text = soalBag[randomIndexSoal, 2];
+                        txtOpsiC.text = soalBag[randomIndexSoal, 3];
+                        txtOpsiD.text = soalBag[randomIndexSoal, 4];
+                        kunciJ = soalBag[randomIndexSoal, 5][0];
 
-                ambilSoal = false;
+                        soalSelesai[randomIndexSoal] = true;
+
+                        ambilSoal = false;
+                        break;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+
+                
             }
         }
     }
 
-    public GameObject panel;
+
     public void Opsi(string opsiHuruf)
     {
         CheckJawaban(opsiHuruf[0]);
 
-        if (isHasil)
+        if(indexSoal == maxSoal - 1)
         {
-            //nothing
+            isHasil = true;
         }
         else
         {
-            panel.SetActive(true);
+            indexSoal++;
+            ambilSoal = true;
         }
 
-        indexSoal++;
-        ambilSoal = true;
-        
+        panel.SetActive(true);
+
+    }
+
+    private float HitungNilai()
+    {
+        return nilai = (float)jwbBenar / maxSoal * 100;
     }
 
     public TextMeshProUGUI txtPenilaian;
@@ -101,10 +135,12 @@ public class Soal : MonoBehaviour
         if (huruf.Equals(kunciJ))
         {
             penilaian = "Benar!";
+            jwbBenar++;
         }
         else
         {
             penilaian = "Salah!";
+            jwbSalah++;
         }
 
         txtPenilaian.text = penilaian;
@@ -119,13 +155,37 @@ public class Soal : MonoBehaviour
         {
             durasiPenilaian -= Time.deltaTime;
 
-            if(durasiPenilaian <= 0)
+            
+
+            if (isHasil)
             {
+                imgPenilaian.SetActive(true);
+                imgHasil.SetActive(false);
+
+                if (durasiPenilaian <= 0)
+                {
+                    txtHasil.text = "Jumlah Benar: " + jwbBenar + "\nJumlah Salah: " + jwbSalah + "\n\nScore: " +HitungNilai();
+
+                    imgPenilaian.SetActive(false);
+                    imgHasil.SetActive(true);
+
+                    durasiPenilaian = 0;
+                }
+            }
+            else
+            {
+                imgPenilaian.SetActive(true);
+                imgHasil.SetActive(false);
+
+                if(durasiPenilaian <= 0)
+                {
                 panel.SetActive(false);
                 durasiPenilaian = durasi;
 
                 TampilkanSoal();
+                }
             }
         }
     }
+
 }
