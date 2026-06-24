@@ -34,6 +34,14 @@ public class Soal : MonoBehaviour
     public GameObject imgPenilaian, imgHasil;
     public TextMeshProUGUI txtHasil;
 
+    // ========================================================
+    // 
+    // ========================================================
+    public AudioSource audioSource; 
+    public AudioClip suaraBenar;    
+    public AudioClip suaraSalah;
+    // ========================================================
+
     // Start is called before the first frame update
     void Start()
     {
@@ -132,15 +140,31 @@ public class Soal : MonoBehaviour
     {
         string penilaian;
 
-        if (huruf.Equals(kunciJ))
+        
+        char jawabanBersih = huruf.ToString().Trim().ToUpper()[0];
+        char kunciBersih = kunciJ.ToString().Trim().ToUpper()[0];
+
+        if (jawabanBersih.Equals(kunciBersih))
         {
             penilaian = "Benar!";
             jwbBenar++;
+
+            if (audioSource != null && suaraBenar != null)
+            {
+                audioSource.clip = suaraBenar;
+                audioSource.Play();
+            }
         }
         else
         {
             penilaian = "Salah!";
             jwbSalah++;
+
+            if (audioSource != null && suaraSalah != null)
+            {
+                audioSource.clip = suaraSalah;
+                audioSource.Play();
+            }
         }
 
         txtPenilaian.text = penilaian;
@@ -179,10 +203,10 @@ public class Soal : MonoBehaviour
 
                 if(durasiPenilaian <= 0)
                 {
-                panel.SetActive(false);
-                durasiPenilaian = durasi;
+                    panel.SetActive(false);
+                    durasiPenilaian = durasi;
 
-                TampilkanSoal();
+                    TampilkanSoal();
                 }
             }
         }
