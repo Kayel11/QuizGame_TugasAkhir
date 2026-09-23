@@ -14,11 +14,7 @@ public class Soal : MonoBehaviour
 
     int indexSoal;
     int maxSoal;
-    bool ambilSoal;
     char kunciJ;
-
-    bool[] soalSelesai;
-
 
     // Komponen UI
     public TextMeshProUGUI txtSoal, txtOpsiA, txtOpsiB, txtOpsiC, txtOpsiD;
@@ -34,37 +30,46 @@ public class Soal : MonoBehaviour
     public GameObject imgPenilaian, imgHasil;
     public TextMeshProUGUI txtHasil;
 
-    // ========================================================
-    // 
-    // ========================================================
+    // Audio
     public AudioSource audioSource; 
     public AudioClip suaraBenar;    
     public AudioClip suaraSalah;
-    // ========================================================
 
-    // Start is called before the first frame update
     void Start()
     {
         durasi = durasiPenilaian;
 
         soal = assetSoal.ToString().Split('#');
+        maxSoal = soal.Length;
 
-        soalSelesai = new bool[soal.Length];
+        // 
+        FisherYatesShuffle();
 
         soalBag = new string[soal.Length, 10];
-        maxSoal = soal.Length;
         OlahSoal();
 
-        ambilSoal = true;
+        // 
+        indexSoal = 0;
         TampilkanSoal();
+    }
 
-        print(soalBag[1,2]); 
+    // FISHER-YATES SHUFFLE
+    private void FisherYatesShuffle()
+    {
+        for (int i = soal.Length - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
 
+            //
+            string temp = soal[i];
+            soal[i] = soal[randomIndex];
+            soal[randomIndex] = temp;
+        }
     }
 
     private void OlahSoal()
     {
-        for(int i=0; i < soal.Length; i++)
+        for(int i = 0; i < soal.Length; i++)
         {
             string[] tempSoal = soal[i].Split('+');
             for(int j = 0; j < tempSoal.Length; j++)
@@ -78,39 +83,17 @@ public class Soal : MonoBehaviour
 
     private void TampilkanSoal()
     {
-        if(indexSoal < maxSoal)
+        // Panggil berurutan dari indexSoal karena array soal sudah acak di awal
+        if (indexSoal < maxSoal)
         {
-            if (ambilSoal)
-            {
-                for(int i=0; i < soal.Length; i++)
-                {
-                    int randomIndexSoal = Random.Range(0, soal.Length);
-                    print("random: " + randomIndexSoal);
-                    if (!soalSelesai[randomIndexSoal])
-                    {
-                        txtSoal.text = soalBag[randomIndexSoal, 0];
-                        txtOpsiA.text = soalBag[randomIndexSoal, 1];
-                        txtOpsiB.text = soalBag[randomIndexSoal, 2];
-                        txtOpsiC.text = soalBag[randomIndexSoal, 3];
-                        txtOpsiD.text = soalBag[randomIndexSoal, 4];
-                        kunciJ = soalBag[randomIndexSoal, 5][0];
-
-                        soalSelesai[randomIndexSoal] = true;
-
-                        ambilSoal = false;
-                        break;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                }
-
-                
-            }
+            txtSoal.text = soalBag[indexSoal, 0];
+            txtOpsiA.text = soalBag[indexSoal, 1];
+            txtOpsiB.text = soalBag[indexSoal, 2];
+            txtOpsiC.text = soalBag[indexSoal, 3];
+            txtOpsiD.text = soalBag[indexSoal, 4];
+            kunciJ = soalBag[indexSoal, 5][0];
         }
     }
-
 
     public void Opsi(string opsiHuruf)
     {
@@ -123,11 +106,9 @@ public class Soal : MonoBehaviour
         else
         {
             indexSoal++;
-            ambilSoal = true;
         }
 
         panel.SetActive(true);
-
     }
 
     private float HitungNilai()
@@ -140,7 +121,6 @@ public class Soal : MonoBehaviour
     {
         string penilaian;
 
-        
         char jawabanBersih = huruf.ToString().Trim().ToUpper()[0];
         char kunciBersih = kunciJ.ToString().Trim().ToUpper()[0];
 
@@ -168,18 +148,13 @@ public class Soal : MonoBehaviour
         }
 
         txtPenilaian.text = penilaian;
-
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         if (panel.activeSelf)
         {
             durasiPenilaian -= Time.deltaTime;
-
-            
 
             if (isHasil)
             {
@@ -188,7 +163,7 @@ public class Soal : MonoBehaviour
 
                 if (durasiPenilaian <= 0)
                 {
-                    txtHasil.text = "Jumlah Benar: " + jwbBenar + "\nJumlah Salah: " + jwbSalah + "\n\nScore: " +HitungNilai();
+                    txtHasil.text = "Jumlah Benar: " + jwbBenar + "\nJumlah Salah: " + jwbSalah + "\n\nScore: " + HitungNilai();
 
                     imgPenilaian.SetActive(false);
                     imgHasil.SetActive(true);
@@ -211,5 +186,4 @@ public class Soal : MonoBehaviour
             }
         }
     }
-
 }
