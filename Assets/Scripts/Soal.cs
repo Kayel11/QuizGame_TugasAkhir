@@ -163,8 +163,17 @@ public class Soal : MonoBehaviour
 
                 if (durasiPenilaian <= 0)
                 {
-                    txtHasil.text = "Jumlah Benar: " + jwbBenar + "\nJumlah Salah: " + jwbSalah + "\n\nScore: " + HitungNilai();
+                    //ambil data nama dan nis dari playerPrefs
+                    string nama = PlayerPrefs.GetString("NamaSiswa", "-");
+                    string nis = PlayerPrefs.GetString("NISSiswa", "-");
 
+
+                txtHasil.text = "Nama: " + nama + "\n" +
+                                    "NIS: " + nis + "\n\n" +
+                                    "Jumlah Benar: " + jwbBenar + "\n" +
+                                    "Jumlah Salah: " + jwbSalah + "\n\n" +
+                                    "Score: " + HitungNilai();
+                                    
                     imgPenilaian.SetActive(false);
                     imgHasil.SetActive(true);
 
