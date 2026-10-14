@@ -22,7 +22,7 @@ public class FormManager : MonoBehaviour
         PlayerPrefs.Save();
 
         
-        SceneManager.LoadScene("QuizScene"); 
+        SceneManager.LoadScene("KategoriSoal"); 
     }
 
     public void KembaliToMainMenu()

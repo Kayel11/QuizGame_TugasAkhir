@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Runtime.InteropServices;
 
 public class Soal : MonoBehaviour
 {   
-    public TextAsset assetSoal;
+    public TextAsset assetSoal; // Fallback jika Resources.Load gagal
 
     private string[] soal;
-
     private string[,] soalBag;
 
     int indexSoal;
@@ -39,16 +37,35 @@ public class Soal : MonoBehaviour
     {
         durasi = durasiPenilaian;
 
-        soal = assetSoal.ToString().Split('#');
+        // 1. Ambil nama file kategori dari PlayerPrefs (default jika kosong: "soal_teknologi")
+        string namaFile = PlayerPrefs.GetString("KategoriSoal", "SoalTeknologi");
+
+        // 2. Load file soal dari folder Assets/Resources/
+        TextAsset loadedAsset = Resources.Load<TextAsset>(namaFile);
+
+        if (loadedAsset != null)
+        {
+            soal = loadedAsset.text.Split('#');
+        }
+        else if (assetSoal != null)
+        {
+            // Fallback jika file di Resources tidak ditemukan
+            soal = assetSoal.text.Split('#');
+        }
+        else
+        {
+            Debug.LogError("File soal tidak ditemukan di folder Resources: " + namaFile);
+            return;
+        }
+
         maxSoal = soal.Length;
 
-        // 
+        // Acak urutan soal
         FisherYatesShuffle();
 
         soalBag = new string[soal.Length, 10];
         OlahSoal();
 
-        // 
         indexSoal = 0;
         TampilkanSoal();
     }
@@ -60,7 +77,6 @@ public class Soal : MonoBehaviour
         {
             int randomIndex = Random.Range(0, i + 1);
 
-            //
             string temp = soal[i];
             soal[i] = soal[randomIndex];
             soal[randomIndex] = temp;
@@ -69,21 +85,18 @@ public class Soal : MonoBehaviour
 
     private void OlahSoal()
     {
-        for(int i = 0; i < soal.Length; i++)
+        for (int i = 0; i < soal.Length; i++)
         {
             string[] tempSoal = soal[i].Split('+');
-            for(int j = 0; j < tempSoal.Length; j++)
+            for (int j = 0; j < tempSoal.Length; j++)
             {
                 soalBag[i, j] = tempSoal[j];
-                continue;
             }
-            continue;
         }
     }
 
     private void TampilkanSoal()
     {
-        // Panggil berurutan dari indexSoal karena array soal sudah acak di awal
         if (indexSoal < maxSoal)
         {
             txtSoal.text = soalBag[indexSoal, 0];
@@ -99,7 +112,7 @@ public class Soal : MonoBehaviour
     {
         CheckJawaban(opsiHuruf[0]);
 
-        if(indexSoal == maxSoal - 1)
+        if (indexSoal == maxSoal - 1)
         {
             isHasil = true;
         }
@@ -163,17 +176,16 @@ public class Soal : MonoBehaviour
 
                 if (durasiPenilaian <= 0)
                 {
-                    //ambil data nama dan nis dari playerPrefs
+                    // Ambil data nama dan nis dari PlayerPrefs
                     string nama = PlayerPrefs.GetString("NamaSiswa", "-");
                     string nis = PlayerPrefs.GetString("NISSiswa", "-");
 
-
-                txtHasil.text = "Nama: " + nama + "\n" +
+                    txtHasil.text = "Nama: " + nama + "\n" +
                                     "NIS: " + nis + "\n\n" +
                                     "Jumlah Benar: " + jwbBenar + "\n" +
                                     "Jumlah Salah: " + jwbSalah + "\n\n" +
                                     "Score: " + HitungNilai();
-                                    
+
                     imgPenilaian.SetActive(false);
                     imgHasil.SetActive(true);
 
@@ -185,7 +197,7 @@ public class Soal : MonoBehaviour
                 imgPenilaian.SetActive(true);
                 imgHasil.SetActive(false);
 
-                if(durasiPenilaian <= 0)
+                if (durasiPenilaian <= 0)
                 {
                     panel.SetActive(false);
                     durasiPenilaian = durasi;
