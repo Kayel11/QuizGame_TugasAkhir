@@ -16,6 +16,7 @@ public class Soal : MonoBehaviour
 
     // Komponen UI
     public TextMeshProUGUI txtSoal, txtOpsiA, txtOpsiB, txtOpsiC, txtOpsiD;
+    public TextMeshProUGUI txtSkorSementara;
 
     bool isHasil;
     private float durasi;
@@ -37,7 +38,13 @@ public class Soal : MonoBehaviour
     {
         durasi = durasiPenilaian;
 
-        // 1. Ambil nama file kategori dari PlayerPrefs (default jika kosong: "soal_teknologi")
+        // <-- TAMBAHAN 2: Reset tampilan skor sementara menjadi 0 di awal
+        if (txtSkorSementara != null)
+        {
+            txtSkorSementara.text = "SCORE: \n0";
+        }
+
+        // 1. Ambil nama file kategori dari PlayerPrefs (default jika kosong: "SoalTeknologi")
         string namaFile = PlayerPrefs.GetString("KategoriSoal", "SoalTeknologi");
 
         // 2. Load file soal dari folder Assets/Resources/
@@ -49,7 +56,6 @@ public class Soal : MonoBehaviour
         }
         else if (assetSoal != null)
         {
-            // Fallback jika file di Resources tidak ditemukan
             soal = assetSoal.text.Split('#');
         }
         else
@@ -141,6 +147,12 @@ public class Soal : MonoBehaviour
         {
             penilaian = "Benar!";
             jwbBenar++;
+
+            // <-- TAMBAHAN 3: Update teks skor sementara setiap kali menjawab benar
+            if (txtSkorSementara != null)
+            {
+                txtSkorSementara.text = "SCORE: \n" + Mathf.RoundToInt(HitungNilai());
+            }
 
             if (audioSource != null && suaraBenar != null)
             {
