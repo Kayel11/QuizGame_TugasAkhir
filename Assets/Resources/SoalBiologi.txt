@@ -58,3 +58,243 @@ Salah satu ciri makhluk hidup adalah bernapas. Organ pernapasan utama pada manus
 +Zoidiogami
 +Antropogami
 +A
+#Tumbuhan kaktus memiliki batang tebal berlapis lilin dan daun berbentuk duri untuk...
++Mempercepat penguapan air
++Mengurangi penguapan dan menyimpan air
++Menarik perhatian serangga
++Mempermudah penyerbukan
++B
+#Bagian darah yang berfungsi mengangkut oksigen ke seluruh tubuh adalah...
++Sel darah putih (leukosit)
++Sel darah merah (eritrosit)
++Keping darah (trombosit)
++Plasma darah
++B
+#Perkembangbiakan vegetatif alami pada tumbuhan pisang menggunakan...
++Umbi lapis
++Tunas
++Spora
++Geragih
++B
+#Hubungan saling menguntungkan antara dua makhluk hidup, seperti lebah dan bunga, disebut simbiosis...
++Parasitisme
++Komensalisme
++Mutualisme
++Amensalisme
++C
+#Alat pernapasan pada ikan yang hidup di air adalah...
++Paru-paru
++Trakea
++Insang
++Kulit
++C
+#Proses pencernaan makanan secara kimiawi di dalam mulut dibantu oleh enzim...
++Pepsin
++Ptialin (amilase)
++Renin
++Lipase
++B
+#Hewan yang berkembang biak dengan cara bertelur dan melahirkan disebut...
++Ovipar
++Vivipar
++Ovovivipar
++Vegetatif
++C
+#Bagian tumbuhan yang berfungsi menyerap air dan zat hara dari dalam tanah adalah...
++Batang
++Daun
++Akar
++Bunga
++C
+#Penyakit kekurangan sel darah merah yang menyebabkan tubuh mudah lemas disebut...
++Hipertensi
++Anemia
++Leukemia
++Diabetes
++B
+#Tumbuhan pemakan serangga seperti kantong semar bertujuan untuk memenuhi kebutuhan...
++Oksigen
++Nitrogen
++Karbon dioksida
++Lemak
++B
+#Perubahan wujud benda dari gas menjadi cair, seperti titik-titik air di pagi hari, disebut...
++Menguap
++Mengembun
++Menyublim
++Membeku
++B
+#Kelompok hewan yang memakan daging disebut...
++Herbivora
++Karnivora
++Omnivora
++Insektivora
++B
+#Bagian mata yang berfungsi mengatur banyak sedikitnya cahaya yang masuk adalah...
++Retina
++Pupil
++Kornea
++Lensa mata
++B
+#Tumbuhan paku dan jamur berkembang biak secara vegetatif alami menggunakan...
++Tunas adventif
++Spora
++Umbi batang
++Akar tinggal
++B
+#Sistem peredaran darah kecil mengalirkan darah dari jantung menuju ke...
++Seluruh tubuh
++Paru-paru
++Ginjal
++Hati
++B
+#Sendi yang hanya memungkinkan gerakan satu arah, seperti pada lutut dan siku, adalah...
++Sendi peluru
++Sendi engsel
++Sendi geser
++Sendi putar
++B
+#Gas yang dibutuhkan tumbuhan hijau saat melakukan proses fotosintesis adalah...
++Oksigen
++Karbon dioksida
++Nitrogen
++Hidrogen
++B
+#Bunglon melindungi diri dari musuhnya dengan cara mengubah warna kulitnya yang disebut...
++Autotomi
++Mimikri
++Kamuflase
++Hibernasi
++B
+#Bagian bunga yang berfungsi sebagai alat kelamin jantan adalah...
++Putik
++Benang sari
++Mahkota bunga
++Kelopak bunga
++B
+#Organ tubuh manusia yang berfungsi menyaring darah dan menghasilkan urine adalah...
++Hati
++Paru-paru
++Ginjal
++Jantung
++C
+#Contoh hewan yang mengalami metamorfosis tidak sempurna adalah...
++Kupu-kupu
++Katak
++Belalang
++Nyamuk
++C
+#Tumbuhan teratai memiliki daun yang lebar dan tipis dengan tujuan untuk...
++Menyimpan cadangan makanan
++Mempercepat penguapan air
++Melindungi diri dari ikan
++Menyerap nutrisi tanah
++B
+#Zat hijau daun yang berperan penting menangkap energi cahaya matahari saat fotosintesis adalah...
++Stomata
++Klorofil
++Xilem
++Floem
++B
+#Hubungan antara benalu yang menempel pada pohon mangga merupakan contoh simbiosis...
++Mutualisme
++Komensalisme
++Parasitisme
++Netralisme
++C
+#Hewan kelelawar mampu mencari makan di malam hari yang gelap menggunakan kemampuan...
++Ekolokasi
++Mimikri
++Autotomi
++Fotosintesis
++A
+#Pembuluh darah yang mengalirkan darah keluar dari jantung disebut pembuluh...
++Balik (vena)
++Nadi (arteri)
++Kapiler
++Limfa
++B
+#Perkembangbiakan vegetatif buatan dengan cara menempelkan mata tunas ke batang tanaman lain disebut...
++Mencangkok
++Stek
++Okulasi (menempel)
++Merunduk
++C
+#Kelainan tulang belakang yang membengkok ke arah samping menyerupai huruf S disebut...
++Kifosis
++Lordosis
++Skoliosis
++Osteoporosis
++C
+#Tumbuhan bawang merah berkembang biak secara vegetatif alami dengan...
++Umbi akar
++Umbi batang
++Umbi lapis
++Geragih
++C
+#Urutan saluran pencernaan manusia yang benar adalah...
++Mulut -> Kerongkongan -> Lambung -> Usus halus -> Usus besar -> Anus
++Mulut -> Tenggorokan -> Lambung -> Usus besar -> Usus halus -> Anus
++Mulut -> Lambung -> Kerongkongan -> Usus halus -> Anus
++Mulut -> Kerongkongan -> Usus halus -> Lambung -> Anus
++A
+#Keping darah (trombosit) pada manusia memiliki peran utama untuk...
++Membunuh kuman penyakit
++Membekukan darah saat terjadi luka
++Mengedarkan sari makanan
++Mengatur suhu tubuh
++B
+#Bagian telinga yang berfungsi menangkap gelombang suara dari luar adalah...
++Rumah siput (koklea)
++Daun telinga
++Saluran eustachius
++Tulang sanggurdi
++B
+#Cicak memutuskan ekornya saat dikejar predator. Kemampuan ini dinamakan...
++Mimikri
++Autotomi
++Hibernasi
++Estivasi
++B
+#Contoh hewan vivipar atau berkembang biak dengan cara melahirkan adalah...
++Ayam dan penyu
++Kucing dan paus
++Buaya dan ular
++Katak dan ikan
++B
+#Jaringan pembuluh pada tumbuhan yang mengangkut air dari akar ke daun adalah...
++Floem
++Xilem
++Kambium
++Epidermis
++B
+#Sumber energi panas dan cahaya terbesar bagi seluruh makhluk hidup di bumi adalah...
++Bulan
++Matahari
++Bintang
++Listrik
++B
+#Lubang-lubang kecil pada permukaan daun yang berfungsi sebagai tempat pertukaran gas disebut...
++Lentisel
++Stomata
++Kloroplas
++Kutikula
++B
+#Hewan yang dapat hidup di dua alam, yaitu di air dan di darat, disebut...
++Reptil
++Mamalia
++Amfibi
++Aves
++C
+#Penyerbukan yang terjadi jika serbuk sari jatuh ke kepala putik bunga lain dalam satu pohon disebut penyerbukan...
++Sendiri
++Tetangga
++Silang
++Bastar
++B
+#Pelestarian hewan dan tumbuhan langka yang dilakukan di luar habitat aslinya, seperti kebun binatang, disebut pelestarian...
++In situ
++Ex situ
++Reboisasi
++Terasering
++B

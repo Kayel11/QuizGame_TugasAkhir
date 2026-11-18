@@ -58,3 +58,243 @@ Kalimat yang mengandung gagasan utama dan menjadi inti pembahasan dari sebuah pa
 +Amanat
 +Watak
 +C
+#Antonim atau lawan kata dari 'optimis' adalah...
++Pesimis
++Yakin
++Semangat
++Percaya
++A
+#Teks yang berisi langkah-langkah atau tahapan untuk melakukan suatu hal secara berurutan disebut...
++Teks narasi
++Teks prosedur
++Teks deskripsi
++Teks eksposisi
++B
+#Penulisan tempat dan tanggal surat resmi yang tepat sesuai ejaan bahasa Indonesia adalah...
++Jakarta, 17 Agustus 2026
++Jakarta: 17 Agustus 2026
++Jakarta 17 Agustus 2026
++Jakarta. 17 Agustus 2026
++A
+#Kata baku yang tepat di bawah ini adalah...
++Apotik
++Apotek
++Praktek
++Ijin
++B
+#Tokoh yang memiliki watak jahat atau menentang tokoh utama dalam cerita disebut tokoh...
++Protagonis
++Antagonis
++Tritagonis
++Figuran
++B
+#Bagian awal pada pidato yang berisi sapaan kepada hadirin dan ucapan syukur disebut...
++Isi pidato
++Penutup pidato
++Pembukaan pidato
++Kesimpulan pidato
++C
+#Majas yang mengumpamakan benda mati seolah-olah dapat hidup dan berbuat seperti manusia disebut majas...
++Hiperbola
++Personifikasi
++Metafora
++Simile
++B
+#Kata tanya 'Bagaimana' digunakan untuk menanyakan...
++Waktu kejadian
++Tempat kejadian
++Cara atau keadaan
++Jumlah benda
++C
+#Paragraf yang kalimat utamanya terletak di awal paragraf disebut paragraf...
++Induktif
++Deduktif
++Campuran
++Naratif
++B
+#Peribahasa 'Air beriak tanda tak dalam' memiliki arti orang yang...
++Banyak bicara biasanya kurang ilmunya
++Suka menolong sesama teman
++Rajin menabung pangkal kaya
++Sangat pendiam tetapi pintar
++A
+#Tanda baca yang digunakan untuk mengakhiri kalimat perintah atau seruan adalah...
++Tanda tanya (?)
++Tanda seru (!)
++Tanda titik (.)
++Tanda koma (,)
++B
+#Cerita rakyat yang mengisahkan asal-usul terjadinya suatu tempat dinamakan...
++Fabel
++Mite
++Legenda
++Sage
++C
+#Imbuhan 'me-' jika bertemu dengan kata dasar 'sapu' akan berubah menjadi...
++Mensapu
++Menyapu
++Mesapu
++Mengsapu
++B
+#Formulir yang digunakan untuk mengirim uang melalui kantor pos atau bank disebut...
++Wesel pos
++Kuitansi
++Daftar riwayat hidup
++Kartu anggota
++A
+#Kata 'membaca' dalam kalimat 'Adik membaca buku cerita di kamar' berkedudukan sebagai...
++Subjek
++Predikat
++Objek
++Keterangan
++B
+#Teks yang bertujuan menggambarkan suatu objek secara rinci sehingga pembaca seolah melihatnya langsung adalah...
++Teks persuasi
++Teks deskripsi
++Teks argumentasi
++Teks laporan
++B
+#Sinonim dari kata 'flora' adalah...
++Dunia hewan
++Dunia tumbuhan
++Dunia laut
++Dunia batu
++B
+#Baris pertama dan kedua pada sebuah pantun disebut...
++Isi
++Sampiran
++Amanat
++Rima
++B
+#Kata depan 'di' yang menunjukkan tempat harus ditulis...
++Digabung dengan kata berikutnya
++Dipisah dari kata berikutnya
++Menggunakan huruf kapital semua
++Diakhiri tanda hubung
++B
+#Kalimat yang bertujuan mengajak atau membujuk pembaca melakukan sesuatu disebut kalimat...
++Tanya
++Berita
++Ajakan
++Larangan
++C
+#Cerita fiksi yang tokoh-tokohnya diperankan oleh hewan yang berperilaku seperti manusia disebut...
++Legenda
++Fabel
++Hikayat
++Cerpen
++B
+#Penulisan gelar sarjana pendidikan yang benar di belakang nama adalah...
++Budi Santoso, S.Pd.
++Budi Santoso S,Pd
++Budi Santoso. SPd
++Budi Santoso, spd
++A
+#Ide pokok yang terletak di akhir paragraf membentuk jenis paragraf...
++Deduktif
++Induktif
++Ineratif
++Deskriptif
++B
+#Informasi utama yang disampaikan dalam sebuah iklan layanan masyarakat bersifat...
++Menjual produk
++Mengedukasi dan mengajak kebaikan
++Mencari keuntungan
++Menghibur penonton
++B
+#Ungkapan 'banting tulang' memiliki makna...
++Bekerja keras
++Bermalas-malasan
++Sakit punggung
++Berolahraga
++A
+#Keterangan waktu dan tempat terjadinya peristiwa dalam sebuah cerita disebut...
++Alur
++Tokoh
++Latar
++Tema
++C
+#Kata baku dari 'aktifitas' adalah...
++Aktivitas
++Aktipitas
++Aktifitas
++Aktiviti
++A
+#Tanda baca yang dipakai untuk memisahkan anak kalimat yang mendahului induk kalimat adalah...
++Tanda titik
++Tanda koma
++Tanda titik dua
++Tanda petik
++B
+#Wawancara dilakukan oleh pewawancara kepada seseorang yang memberikan informasi yang disebut...
++Wartawan
++Narasumber
++Penulis
++Penyiar
++B
+#Puisi lama yang terdiri dari dua baris dalam satu bait dan bersajak A-A disebut...
++Pantun
++Syair
++Gurindam
++Soneta
++C
+#Kata penghubung yang menyatakan hubungan sebab-akibat adalah...
++Dan
++Atau
++Sehingga
++Tetapi
++C
+#Daftar riwayat hidup biasanya dibuat untuk keperluan...
++Meminjam buku perpustakaan
++Melamar pekerjaan atau mendaftar sekolah
++Membeli tiket kereta
++Mengirim paket barang
++B
+#Ringkasan isi sebuah bacaan yang ditulis berdasarkan gagasan pokok tiap paragraf disebut...
++Ikhtisar atau ringkasan
++Daftar pustaka
++Kata pengantar
++Lampiran
++A
+#Antonim dari kata 'global' adalah...
++Dunia
++Lokal
++Luas
++Umum
++B
+#Kalimat 'Wah, indah sekali pemandangan pantai ini!' merupakan jenis kalimat...
++Tanya
++Kagum atau seruan
++Perintah
++Berita
++B
+#Teks laporan hasil pengamatan disusun berdasarkan...
++Khayalan penulis
++Fakta dan data nyata
++Cerita dongeng
++Pendapat pribadi saja
++B
+#Kata dasar dari 'mempertanggungjawabkan' adalah...
++Tanggung
++Jawab
++Tanggung jawab
++Pertanggung
++C
+#Penggunaan huruf kapital yang tepat terdapat pada kalimat...
++Ibu membeli jeruk bali di pasar.
++Ayah pergi ke pulau Jawa bulan depan.
++Adik belajar Bahasa indonesia.
++Kami berlibur ke danau Toba.
++A
+#Sapaan yang tepat untuk mengawali surat pribadi kepada teman sebaya adalah...
++Dengan hormat,
++Halo sahabatku,
++Kepada Yth. Bapak/Ibu,
++Salam sejahtera bagi kita semua,
++B
+#Teks eksplanasi adalah teks yang menjelaskan tentang proses terjadinya suatu fenomena...
++Alam dan sosial
++Dongeng dan mitos
++Iklan dan promosi
++Puisi dan pantun
++A

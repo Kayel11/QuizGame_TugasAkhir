@@ -58,3 +58,243 @@ Komputer adalah alat yang digunakan untuk…
 +Menggerakan pointer
 +Menyimpan
 +C
+#Perangkat keras yang berfungsi mencetak dokumen dari komputer ke kertas adalah...
++Scanner
++Printer
++Speaker
++Proyektor
++B
+#RAM pada komputer merupakan singkatan dari...
++Read Access Memory
++Random Access Memory
++Run All Memory
++Rapid Active Memory
++B
+#Perangkat keras yang berfungsi memindai dokumen fisik atau foto menjadi data digital adalah...
++Printer
++Scanner
++Plotter
++Modem
++B
+#Aplikasi pengolah kata yang paling umum digunakan untuk mengetik surat atau laporan adalah...
++Microsoft Excel
++Microsoft Word
++Microsoft PowerPoint
++Adobe Photoshop
++B
+#Perangkat output yang berfungsi mengeluarkan suara dari komputer adalah...
++Microphone
++Speaker
++Webcam
++Keyboard
++B
+#Tombol pintasan (shortcut) pada keyboard untuk menyalin teks atau file adalah...
++Ctrl - V
++Ctrl - C
++Ctrl - X
++Ctrl - Z
++B
+#Jaringan komputer global yang menghubungkan jutaan perangkat di seluruh dunia disebut...
++Intranet
++Internet
++Bluetooth
++Localhost
++B
+#Perangkat lunak yang berfungsi menjelajahi halaman web di internet disebut...
++Web Browser
++Media Player
++Antivirus
++File Explorer
++A
+#Contoh sistem operasi pada komputer adalah...
++Microsoft Office
++Windows dan Linux
++Google Chrome
++CorelDRAW
++B
+#Tombol shortcut untuk membatalkan perintah terakhir (Undo) adalah...
++Ctrl - Z
++Ctrl - Y
++Ctrl - A
++Ctrl - S
++A
+#Perangkat input yang digunakan untuk merekam suara ke dalam komputer adalah...
++Speaker
++Headset
++Microphone
++Monitor
++C
+#Aplikasi pengolah angka yang berbentuk tabel baris dan kolom adalah...
++Microsoft Word
++Microsoft Excel
++Microsoft Paint
++Notepad
++B
+#Satuan terkecil dalam penyimpanan data digital komputer adalah...
++Byte
++Bit
++Megabyte
++Gigabyte
++B
+#Perangkat keras yang berfungsi menampilkan tampilan layar komputer ke dinding atau layar lebar adalah...
++Scanner
++Proyektor (LCD)
++Router
++Flashdisk
++B
+#Tombol pada keyboard yang digunakan untuk menghapus karakter di sebelah kiri kursor adalah...
++Delete
++Backspace
++Enter
++Shift
++B
+#Perangkat penyimpanan data portabel yang berukuran kecil dan dihubungkan lewat port USB adalah...
++Harddisk internal
++Flashdisk
++RAM
++Processor
++B
+#Etika dan tata krama yang baik saat berkomunikasi di dunia internet disebut...
++Netiket (Netiquette)
++Hacking
++Spamming
++Phishing
++A
+#Aplikasi yang digunakan untuk membuat slide presentasi adalah...
++Microsoft Access
++Microsoft PowerPoint
++Windows Media Player
++WinRAR
++B
+#Tombol shortcut untuk menyimpan dokumen yang sedang dikerjakan adalah...
++Ctrl - P
++Ctrl - S
++Ctrl - O
++Ctrl - N
++B
+#Contoh mesin pencari (search engine) yang paling populer di internet adalah...
++Google
++Instagram
++WhatsApp
++YouTube
++A
+#Perangkat keras yang berfungsi sebagai pusat penghubung seluruh komponen utama di dalam casing komputer adalah...
++Harddisk
++Motherboard
++Power Supply
++Cooling Fan
++B
+#Surat elektronik yang dikirim melalui jaringan internet disebut...
++SMS
++E-mail
++Fax
++Telegram pos
++B
+#Tombol pada keyboard yang berfungsi membuat huruf kapital secara terus-menerus adalah...
++Tab
++Caps Lock
++Ctrl
++Alt
++B
+#Perangkat lunak yang berfungsi melindungi komputer dari serangan program berbahaya disebut...
++Browser
++Antivirus
++Compiler
++Driver
++B
+#Tindakan kejahatan siber dengan cara menipu korban agar memberikan kata sandi atau data pribadi disebut...
++Phishing
++Browsing
++Downloading
++Streaming
++A
+#Perangkat input yang berfungsi menangkap gambar atau video secara langsung di komputer adalah...
++Webcam
++Monitor
++Printer
++Speaker
++A
+#Tombol shortcut untuk menempelkan (Paste) hasil salinan teks adalah...
++Ctrl - C
++Ctrl - V
++Ctrl - X
++Ctrl - P
++B
+#Teknologi jaringan nirkabel jarak pendek untuk menghubungkan dua perangkat tanpa kabel adalah...
++LAN
++Bluetooth
++Fiber Optik
++HDMI
++B
+#Komponen komputer yang bertugas menyuplai daya listrik ke seluruh komponen perangkat keras adalah...
++Processor
++Power Supply (PSU)
++VGA Card
++RAM
++B
+#Ekstensi file standar untuk dokumen Microsoft Word modern adalah...
++.xlsx
++.docx
++.pptx
++.mp4
++B
+#Perangkat lunak berbahaya yang dapat merusak sistem komputer dan menggandakan dirinya sendiri disebut...
++Firewall
++Virus komputer
++Shareware
++Freeware
++B
+#Fungsi tombol 'Enter' pada keyboard saat mengetik dokumen adalah...
++Menghapus satu paragraf
++Membuat baris baru
++Menutup aplikasi
++Menyimpan file
++B
+#Komponen perangkat keras yang berfungsi mengolah tampilan grafis pada layar monitor adalah...
++Sound Card
++VGA Card (GPU)
++LAN Card
++Harddisk
++B
+#Proses mengambil atau mengunduh file dari internet ke perangkat komputer disebut...
++Upload
++Download
++Streaming
++Browsing
++B
+#Contoh sistem operasi yang banyak digunakan pada perangkat smartphone adalah...
++Windows XP
++Android dan iOS
++Ubuntu Desktop
++MS-DOS
++B
+#Tombol shortcut untuk memilih seluruh teks atau objek dalam satu halaman adalah...
++Ctrl - A
++Ctrl - B
++Ctrl - I
++Ctrl - U
++A
+#Perangkat yang menghubungkan jaringan lokal ke jaringan internet secara nirkabel disebut...
++Wi-Fi Router
++Scanner
++Joystick
++Barcode Reader
++A
+#Keamanan akun digital dapat diperkuat dengan mengaktifkan fitur verifikasi dua langkah atau...
++Two-Factor Authentication (2FA)
++Auto-Save
++Screen Saver
++Dark Mode
++A
+#Program komputer yang kode sumbernya terbuka dan bebas dikembangkan oleh siapa saja disebut...
++Proprietary
++Open Source
++Trialware
++Adware
++B
+#Proses mengirim atau mengunggah file dari komputer pribadi ke server internet disebut...
++Download
++Upload
++Install
++Extract
++B

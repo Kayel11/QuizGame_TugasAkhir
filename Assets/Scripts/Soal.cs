@@ -5,7 +5,10 @@ using TMPro;
 
 public class Soal : MonoBehaviour
 {   
-    public TextAsset assetSoal; // Fallback jika Resources.Load gagal
+    public TextAsset assetSoal;
+
+    [Header("Pengaturan Jumlah Soal")]
+    public int jumlahSoalTampil = 30;
 
     private string[] soal;
     private string[,] soalBag;
@@ -17,6 +20,7 @@ public class Soal : MonoBehaviour
     // Komponen UI
     public TextMeshProUGUI txtSoal, txtOpsiA, txtOpsiB, txtOpsiC, txtOpsiD;
     public TextMeshProUGUI txtSkorSementara;
+    public TextMeshProUGUI txtNomorSoal;
 
     bool isHasil;
     private float durasi;
@@ -38,13 +42,12 @@ public class Soal : MonoBehaviour
     {
         durasi = durasiPenilaian;
 
-        // <-- TAMBAHAN 2: Reset tampilan skor sementara menjadi 0 di awal
         if (txtSkorSementara != null)
         {
-            txtSkorSementara.text = "SCORE: \n0";
+            txtSkorSementara.text = "SCORE:\n0";
         }
 
-        // 1. Ambil nama file kategori dari PlayerPrefs (default jika kosong: "SoalTeknologi")
+        // 1. Ambil nama file kategori dari PlayerPrefs
         string namaFile = PlayerPrefs.GetString("KategoriSoal", "SoalTeknologi");
 
         // 2. Load file soal dari folder Assets/Resources/
@@ -64,10 +67,10 @@ public class Soal : MonoBehaviour
             return;
         }
 
-        maxSoal = soal.Length;
-
-        // Acak urutan soal
         FisherYatesShuffle();
+
+        // Batas jumlah soal yang dimainkan sesuai pengaturan
+        maxSoal = Mathf.Min(jumlahSoalTampil, soal.Length);
 
         soalBag = new string[soal.Length, 10];
         OlahSoal();
@@ -105,6 +108,12 @@ public class Soal : MonoBehaviour
     {
         if (indexSoal < maxSoal)
         {
+            
+            if (txtNomorSoal != null)
+            {
+                txtNomorSoal.text = "Soal " + (indexSoal + 1) + " / " + maxSoal;
+            }
+
             txtSoal.text = soalBag[indexSoal, 0];
             txtOpsiA.text = soalBag[indexSoal, 1];
             txtOpsiB.text = soalBag[indexSoal, 2];
@@ -148,10 +157,9 @@ public class Soal : MonoBehaviour
             penilaian = "Benar!";
             jwbBenar++;
 
-            // <-- TAMBAHAN 3: Update teks skor sementara setiap kali menjawab benar
             if (txtSkorSementara != null)
             {
-                txtSkorSementara.text = "SCORE: \n" + Mathf.RoundToInt(HitungNilai());
+                txtSkorSementara.text = "SCORE:\n" + Mathf.RoundToInt(HitungNilai());
             }
 
             if (audioSource != null && suaraBenar != null)
@@ -188,7 +196,6 @@ public class Soal : MonoBehaviour
 
                 if (durasiPenilaian <= 0)
                 {
-                    // Ambil data nama dan nis dari PlayerPrefs
                     string nama = PlayerPrefs.GetString("NamaSiswa", "-");
                     string nis = PlayerPrefs.GetString("NISSiswa", "-");
 
@@ -196,7 +203,7 @@ public class Soal : MonoBehaviour
                                     "NIS: " + nis + "\n\n" +
                                     "Jumlah Benar: " + jwbBenar + "\n" +
                                     "Jumlah Salah: " + jwbSalah + "\n\n" +
-                                    "Score: " + HitungNilai();
+                                    "Score: " + Mathf.RoundToInt(HitungNilai());
 
                     imgPenilaian.SetActive(false);
                     imgHasil.SetActive(true);
