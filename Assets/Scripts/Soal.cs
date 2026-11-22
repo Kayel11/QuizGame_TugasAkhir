@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Soal : MonoBehaviour
@@ -155,6 +156,7 @@ public class Soal : MonoBehaviour
         if (jawabanBersih.Equals(kunciBersih))
         {
             penilaian = "Benar!";
+            imgPenilaian.GetComponent<Image>().color = new Color32(144, 238, 144, 255);
             jwbBenar++;
 
             if (txtSkorSementara != null)
@@ -171,6 +173,7 @@ public class Soal : MonoBehaviour
         else
         {
             penilaian = "Salah!";
+            imgPenilaian.GetComponent<Image>().color = new Color32(255, 160, 160, 255);
             jwbSalah++;
 
             if (audioSource != null && suaraSalah != null)
