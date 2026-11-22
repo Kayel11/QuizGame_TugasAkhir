@@ -232,11 +232,11 @@ Salah satu ciri makhluk hidup adalah bernapas. Organ pernapasan utama pada manus
 +Umbi lapis
 +Geragih
 +C
-#Urutan saluran pencernaan manusia yang benar adalah...
-+Mulut -> Kerongkongan -> Lambung -> Usus halus -> Usus besar -> Anus
-+Mulut -> Tenggorokan -> Lambung -> Usus besar -> Usus halus -> Anus
-+Mulut -> Lambung -> Kerongkongan -> Usus halus -> Anus
-+Mulut -> Kerongkongan -> Usus halus -> Lambung -> Anus
+#Setelah dari kerongkongan, makanan akan masuk ke...
++Lambung
++Usus halus
++Usus besar
++Tenggorokan
 +A
 #Keping darah (trombosit) pada manusia memiliki peran utama untuk...
 +Membunuh kuman penyakit
